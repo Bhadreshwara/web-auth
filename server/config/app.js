@@ -1,3 +1,4 @@
+// installed 3rd party packages
 let createError = require("http-errors");
 let express = require("express");
 let path = require("path");
@@ -49,7 +50,7 @@ app.use(express.static(path.join(__dirname, "../../public")));
 //setup express session
 app.use(
   session({
-    secret: "JayPortfolioSecretKey",
+    secret: "JaySecretKey",
     saveUninitialized: false,
     resave: false,
   })

@@ -20,7 +20,7 @@ module.exports.displayHomePage = (req, res, next) => {
 
 module.exports.displayAboutPage = (req, res, next) => {
   res.render("index", {
-    title: "About",
+    title: "About Me",
     displayName: req.user ? req.user.displayName : "",
   });
 };
@@ -41,7 +41,7 @@ module.exports.displayServicesPage = (req, res, next) => {
 
 module.exports.displayContactPage = (req, res, next) => {
   res.render("index", {
-    title: "Contact",
+    title: "Contact Me",
     displayName: req.user ? req.user.displayName : "",
   });
 };

@@ -13,4 +13,3 @@ let businessModel = mongoose.Schema(
 );
 
 module.exports = mongoose.model("contact", businessModel);
-// 'business'
