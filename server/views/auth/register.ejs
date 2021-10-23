@@ -1,0 +1,59 @@
+<%- include('../partials/header'); -%>
+
+
+<main class="container transparent mb-5">
+    <div class="jumbotron">
+        <div class="container-flex" style="padding-top:45px;">
+
+            <!-- Page title -->
+            <h1 class="register-title"><b>Sign up </b></h1>
+            <hr class="my-3"><br>
+
+            <% if(messages.length> 0) {%>
+                    <div class="alert alert-danger">
+                        <%= messages %>
+                    </div>
+                    <% } %>
+           
+
+                    <div class="row">
+                        <div class="offset-md-4 col-md-4">
+                            <form method="POST" autocomplete="off">
+                                <fieldset class="form-group">
+                                    <label for="username">Username: </label>
+                                    <input type="text" class="form-control" name="username"
+                                        placeholder="Username" id="username" required autofocus>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <label for="password">Password: </label>
+                                    <input type="password" class="form-control"
+                                    name="password" placeholder="Password"
+                                    id="password" required>
+                                </fieldset>
+                
+                                <fieldset class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input type="email" class="form-control"
+                                    name="email" placeholder="abc@xyz"
+                                    id="email" required>
+                                </fieldset>
+                
+                            
+                                <br> 
+                                <fieldset class="form-group text-right">
+                                    <input type="submit" class="btn btn-primary" value="Register">
+                                    <a href="/">
+                                        <input type="button" class="btn btn-light" value="Cancel">
+                                    </a>
+                                </fieldset>
+
+                            </form>
+                        </div>
+                    </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
+</main>
+    <%- include('../partials/script'); -%>
